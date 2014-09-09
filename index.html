@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title> Add Note Sample </title>
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./listnotes.css"/>
   </head>
   <body>
-    <div>
-      <form>
-        <h2>Specify a work item number</h2>
-        Work Item No: <input type="text" name="witem-no">
-        <input type="submit" value="Submit">
+    <div class="container">
+      <form class="form-list-notes" role="form">
+        <h2 class="form-list-notes-heading">Specify a work item number</h2>
+        <input type="text" class="form-control" placeholder="Work Item No" required>
+        <button class="btn btn-lrg btn-primary btn-block" type="submit">Submit</button>
       </form>
     </div>
   </body>
